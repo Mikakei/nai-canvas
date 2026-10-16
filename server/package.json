@@ -1,0 +1,22 @@
+{
+  "name": "@nai/server",
+  "private": true,
+  "license": "AGPL-3.0-only",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch --clear-screen=false src/index.ts",
+    "start": "tsx src/index.ts",
+    "typecheck": "tsc -p ."
+  },
+  "dependencies": {
+    "@hono/node-server": "^1.19.5",
+    "@nai/shared": "workspace:*",
+    "fflate": "^0.8.2",
+    "hono": "^4.9.10",
+    "undici": "^8.11.2"
+  },
+  "devDependencies": {
+    "@types/node": "^24.7.2",
+    "tsx": "^4.20.6"
+  }
+}

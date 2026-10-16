@@ -1,0 +1,20 @@
+{
+  "name": "nai-canvas",
+  "private": true,
+  "license": "AGPL-3.0-only",
+  "type": "module",
+  "scripts": {
+    "dev": "node scripts/dev.mjs",
+    "dev:mock": "node scripts/dev.mjs --mock",
+    "build": "pnpm --filter @nai/web build",
+    "start": "pnpm --filter @nai/server start",
+    "test": "vitest run",
+    "typecheck": "pnpm -r typecheck",
+    "demos": "pnpm build && node scripts/demos/record.mjs"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.2",
+    "vitest": "^3.2.4"
+  },
+  "packageManager": "pnpm@11.24.0"
+}

@@ -1,0 +1,6 @@
+# 仓库里统一用 LF 换行；.bat 用 CRLF（cmd 对 LF 换行的批处理文件支持不好）
+* text=auto eol=lf
+*.bat text eol=crlf
+*.gif binary
+*.png binary
+*.webp binary
