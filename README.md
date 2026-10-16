@@ -196,13 +196,6 @@ scripts/  启动、开发和录演示动图的脚本
 docs/     功能调研（FEATURES.md）、开发计划和记录（PLAN.md）、演示动图
 ```
 
-### 重新录演示动图
-
-改了界面以后，可以用 `pnpm demos` 把 README 里的动图重新录一遍，也可以只录其中几个：`pnpm demos hero params`。场景有 `hero`、`wires`、`params`、`artist`、`inpaint`、`grid`、`gallery`，写在 `scripts/demos/scenes.mjs` 里。
-
-- 需要本机装有 Chrome（或 Edge、Chromium）和 [ffmpeg](https://ffmpeg.org)；找不到时用 `CHROME_PATH`、`FFMPEG` 环境变量指定路径
-- 每个场景都单独起一个演示模式的服务，数据放在系统临时目录，录完自动删掉，不会动 `data/` 和 `outputs/`
-- 默认输出到 `docs/media/`；`--out <目录>` 换输出位置，`--keep` 保留临时目录。某个场景没录成时，会留下临时目录和现场截图
 
 ## 许可证
 
